@@ -1,0 +1,8 @@
+# npm init -y
+# npm i express
+# npm i socket.io
+# npm i -g nodemon
+# npm i dotenv
+# npm install --save sequelize
+# npm install mysql2
+# npm i body-parser
