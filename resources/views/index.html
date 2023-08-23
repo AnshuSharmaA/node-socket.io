@@ -15,10 +15,34 @@
     <script>
         const socket = io('http://localhost:3000');
 
+        console.log('Hello from node js Socket .io')
         socket.on('usersDetails', (data) => {
             console.log('Initial users:', data);
-            // Handle the received data here
+
         });
+        socket.on('all_bookings', (data) => {
+            console.log('Bookings:', data);
+        });
+        socket.on('all_bookables', (data) => {
+            console.log('Bookables:', data);
+        });
+        socket.on('all_lanes', (data) => {
+            console.log('lanes', data);
+        });
+        socket.on('validation_error', (error) => {
+            console.log(error);
+        });
+
+        // socket.emit('users', { role_id: '' });
+        socket.emit('users');
+        socket.emit('bookings')
+        socket.emit('bookables')
+        socket.emit('lane')
+
+
+
+
+
     </script>
 </body>
 

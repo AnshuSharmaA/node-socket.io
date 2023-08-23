@@ -16,7 +16,9 @@ db.Sequelize = Sequelize;
 
 /*  Define your models */
 db.User = require("../models/User")(sequelize, DataTypes);
-
+db.Booking = require("../models/Booking")(sequelize, DataTypes);
+db.Bookable = require("../models/Bookable")(sequelize, DataTypes);
+db.Lane = require("../models/Lane")(sequelize, DataTypes);
 
 /* Association or Relation between tables  */
 // const userAssociations = require('./association/User');

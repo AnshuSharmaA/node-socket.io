@@ -8,10 +8,10 @@ require('dotenv').config();
 
 
 /* Include the Sockets file */
-const usersDetails = require('./sockets/UserSocket');
+const initializeSocket = require('./sockets/MainSocket');
 /*End */
 /* Calling of Socetks method which will provide data  */
-usersDetails(server);
+initializeSocket(server);
 /* End */
 
 /* Basic view file to check the data is comming from socket or not */
